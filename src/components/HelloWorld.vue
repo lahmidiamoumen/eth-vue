@@ -7,10 +7,10 @@
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <div class='metamask-info'>
-      <p>Metamask: {{ web3.isInjected }}</p>
+      <p>Metamask: {{ web3.isInjected === true ? 'ON' : 'OFF' }}</p>
       <p>Network: {{ web3.networkId }}</p>
       <p>Account: {{ web3.coinbase }}</p>
-      <p>Balance: {{ web3.balance }}</p>
+      <p>Balance: {{ web3.balance }} Wei</p>
     </div>
   </div>
 </template>
